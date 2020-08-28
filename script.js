@@ -131,6 +131,8 @@ if (!location.hash) {
 
   const joinRoom = () =>{
     var roomKey = document.getElementById('roomId').value;
+    console.log('updating');
     window.location.replace(`https://vikranth19.github.io/p2p-videochat-app/#${roomKey}`);
+    location.reload();
   }
 
